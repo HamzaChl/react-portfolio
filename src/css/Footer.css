@@ -1,0 +1,31 @@
+footer {
+    height: 100px;
+    margin-top: 50px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer p {
+    text-align: left !important;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.icon-footer {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.icon-footer i:hover {
+    background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
