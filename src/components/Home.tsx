@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "../css/BannerText.css";
-import Technologies from "./Technologies";
 
 const BannerText: React.FC = () => {
   const [spanContent, setSpanContent] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
-    const text = "Designer & Developer";
-    const words = text.split(" ");
+    const lines = [["Designer", "&"], ["Developer"]];
     const generatedSpanContent: JSX.Element[] = [];
 
-    words.forEach((word, wordIndex) => {
-      if (word) {
+    lines.forEach((line, lineIndex) => {
+      const lineContent: JSX.Element[] = [];
+
+      line.forEach((word, wordIndex) => {
         const wordSpans: JSX.Element[] = [];
         const delayBase = wordIndex * 0.1;
 
@@ -37,13 +37,19 @@ const BannerText: React.FC = () => {
           );
         }
 
-        generatedSpanContent.push(
-          <span key={wordIndex} className="word">
+        lineContent.push(
+          <span key={`${lineIndex}-${wordIndex}`} className="word">
             {wordSpans}
           </span>,
-          <span key={`space-${wordIndex}`}> </span> // Espace entre les mots
+          <span key={`space-${lineIndex}-${wordIndex}`}> </span> // Espace entre les mots
         );
-      }
+      });
+
+      generatedSpanContent.push(
+        <div key={`line-${lineIndex}`} className="line">
+          {lineContent}
+        </div>
+      );
     });
 
     setSpanContent(generatedSpanContent); // Mettez à jour le contenu des spans
@@ -55,11 +61,8 @@ const BannerText: React.FC = () => {
         <span className="fadeIn">Portfolio</span>
       </div>
       <div className="banner-text">
-        <h1 className="head-text">
-          {spanContent} {/* Utilisez `spanContent` comme contenu JSX */}
-        </h1>
+        <h1 className="head-text">{spanContent}</h1>
       </div>
-      <Technologies />
     </main>
   );
 };

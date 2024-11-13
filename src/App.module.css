@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --color-background: #101010;
-    --color-text: white;
-    --color-primary: #c3eee5;
-    --color-secondary: #425284;
-    --color-gradient: #859398;
-    --color-accent: #e8e8e8;
-    --color-light-bg: rgb(190, 190, 190);
-    --color-light-text: black;
+    --color-background: #f3f3f3;
+    --color-text: #181818;
+    --color-primary: #859398;
+    --color-secondary: #283048;
+    --color-accent: #181818;
+    --color-light-bg: rgb(240, 240, 240);
+    --color-light-text: #333333;
     --color-design-bg: rgb(120, 176, 196);
     --color-web-bg: rgb(231, 119, 119);
     --color-coding-bg: rgb(130, 196, 120);
-    --color-project-bg: #ffffff;
+    --color-project-bg: #333333;
     --color-project-hover: opacity(70%);
     --color-project-hover-active: opacity(100%);
-    --color-header-border: #ffffff;
-    --color-technology: rgb(99, 99, 99);
+    --color-header-border: #181818;
+    --color-technology: lightgray;
 }
 
 .light-mode {
@@ -84,6 +83,12 @@ p {
     font-size: 15px;
     color: var(--color-text);
     opacity: 0.6;
+}
+
+.headerp {
+    opacity: 1.0;
+    text-transform: uppercase;
+
 }
 
 a {

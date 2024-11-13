@@ -9,6 +9,8 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card:hover {
