@@ -1,0 +1,30 @@
+.LabosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.LaboCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.LaboCard:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.052);
+}
+
+.LaboContent h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}

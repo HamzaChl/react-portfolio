@@ -38,7 +38,6 @@ const Technologies = () => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-between",
         }}
       >
         <Card

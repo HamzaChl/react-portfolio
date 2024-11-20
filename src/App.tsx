@@ -6,6 +6,17 @@ import Services from "./components/Services";
 import BannerText from "./components/Home";
 import Footer from "./components/Footer";
 import Technologies from "./components/Technologies";
+import Labos from "./components/Labos";
+import {
+  Labo1,
+  Labo2,
+  Labo3,
+  Labo4,
+  Labo5,
+  Labo6,
+  Labo7,
+  Labo8,
+} from "./components/Labos/index";
 
 const Root = () => {
   return (
@@ -50,8 +61,40 @@ const App = () => {
           element: <Page1 />,
         },
         {
-          path: "page2",
-          element: <Page2 />,
+          path: "labos",
+          element: <Labos />,
+        },
+        {
+          path: "labos/labo1",
+          element: <Labo1 />,
+        },
+        {
+          path: "labos/labo2",
+          element: <Labo2 />,
+        },
+        {
+          path: "labos/labo3",
+          element: <Labo3 />,
+        },
+        {
+          path: "labos/labo4",
+          element: <Labo4 />,
+        },
+        {
+          path: "labos/labo5",
+          element: <Labo5 />,
+        },
+        {
+          path: "labos/labo6",
+          element: <Labo6 />,
+        },
+        {
+          path: "labos/labo7",
+          element: <Labo7 />,
+        },
+        {
+          path: "labos/labo8",
+          element: <Labo8 />,
         },
         {
           path: "services",

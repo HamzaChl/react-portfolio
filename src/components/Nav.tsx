@@ -31,6 +31,14 @@ const Nav = () => {
           className={({ isActive }) =>
             isActive ? styles.activeNavLink : styles.navItem
           }
+          to="/labos"
+        >
+          Labos
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? styles.activeNavLink : styles.navItem
+          }
           to="/services"
         >
           Services
