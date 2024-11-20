@@ -15,19 +15,22 @@ const labos = [
 
 const Labos = () => {
   return (
-    <div className="LabosContainer">
-      {labos.map((labo) => (
-        <NavLink
-          key={labo.id}
-          to={`/labos/labo${labo.id}`}
-          className="LaboCard"
-        >
-          <div className="LaboContent">
-            <h3>{labo.name}</h3>
-          </div>
-        </NavLink>
-      ))}
-    </div>
+    <>
+      <h1 style={{ textAlign: "center" }}>Laboratoire</h1>
+      <div className="LabosContainer">
+        {labos.map((labo) => (
+          <NavLink
+            key={labo.id}
+            to={`/labos/labo${labo.id}`}
+            className="LaboCard"
+          >
+            <div className="LaboContent">
+              <h3>{labo.name}</h3>
+            </div>
+          </NavLink>
+        ))}
+      </div>
+    </>
   );
 };
 

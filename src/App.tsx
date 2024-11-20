@@ -17,6 +17,8 @@ import {
   Labo7,
   Labo8,
 } from "./components/Labos/index";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 const Root = () => {
   return (
@@ -42,10 +44,6 @@ const Page1 = () => {
   return <div>Page 1</div>;
 };
 
-const Page2 = () => {
-  return <div>Page 2</div>;
-};
-
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -57,8 +55,12 @@ const App = () => {
           element: <Home />,
         },
         {
-          path: "page1",
-          element: <Page1 />,
+          path: "projects",
+          element: <Projects />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
         },
         {
           path: "labos",

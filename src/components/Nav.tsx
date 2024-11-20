@@ -23,7 +23,7 @@ const Nav = () => {
           className={({ isActive }) =>
             isActive ? styles.activeNavLink : styles.navItem
           }
-          to="/page1"
+          to="/projects"
         >
           Projets
         </NavLink>
@@ -47,7 +47,7 @@ const Nav = () => {
           className={({ isActive }) =>
             isActive ? styles.activeNavLink : styles.navItem
           }
-          to="/page2"
+          to="/contact"
         >
           Contact
         </NavLink>
