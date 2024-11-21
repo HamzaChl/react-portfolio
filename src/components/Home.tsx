@@ -63,6 +63,7 @@ const BannerText: React.FC = () => {
       <div className="banner-text">
         <h1 className="head-text">{spanContent}</h1>
       </div>
+      <div className="img">hdaziooia</div>
     </main>
   );
 };
